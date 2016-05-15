@@ -1,5 +1,7 @@
 <header></header>
 <main>
-  <check-item *ngFor="let checkItem of checkItems" [item]="checkItem"></check-item>
+  <i class="prev-item material-icons large" (click)="previousItem()">chevron_left</i>
+  <check-item [item]="currentItem"></check-item>
+  <i class="next-item material-icons large" (click)="nextItem()">chevron_right</i>
 </main>
 <footer></footer>

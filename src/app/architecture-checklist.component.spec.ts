@@ -14,9 +14,4 @@ describe('App: ArchitectureChecklist', () => {
       inject([ArchitectureChecklistAppComponent], (app: ArchitectureChecklistAppComponent) => {
     expect(app).toBeTruthy();
   }));
-
-  it('should have as title \'architecture-checklist works!\'',
-      inject([ArchitectureChecklistAppComponent], (app: ArchitectureChecklistAppComponent) => {
-    expect(app.title).toEqual('architecture-checklist works!');
-  }));
 });

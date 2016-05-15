@@ -3,4 +3,5 @@ export interface CheckItem{
     infos?: string[];
     pros?: string[];
     cons?: string[];
+    value: number;
 }
