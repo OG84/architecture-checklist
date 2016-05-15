@@ -1,0 +1,44 @@
+:host{
+    border-left: 6px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin: 30px;
+    max-width: 650px;
+}
+.range-field{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.scale{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul > li{
+    display: flex;
+    align-items: center;
+}
+
+ul > li > i{
+    padding: 10px;
+}
+
+ul.pros > li > i{
+    color: lightgreen;
+}
+
+ul.cons > li > i{
+    color: lightcoral;
+}

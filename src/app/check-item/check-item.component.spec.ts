@@ -9,25 +9,25 @@ import {
 import { ComponentFixture, TestComponentBuilder } from '@angular/compiler/testing';
 import { Component } from '@angular/core';
 import { By } from '@angular/platform-browser';
-import { HeaderComponent } from './header.component';
+import { CheckItemComponent } from './check-item.component';
 
-describe('Component: Header', () => {
+describe('Component: Criteria', () => {
   let builder: TestComponentBuilder;
 
-  beforeEachProviders(() => [HeaderComponent]);
+  beforeEachProviders(() => [CheckItemComponent]);
   beforeEach(inject([TestComponentBuilder], function (tcb: TestComponentBuilder) {
     builder = tcb;
   }));
 
-  it('should inject the component', inject([HeaderComponent],
-      (component: HeaderComponent) => {
+  it('should inject the component', inject([CheckItemComponent],
+      (component: CheckItemComponent) => {
     expect(component).toBeTruthy();
   }));
 
   it('should create the component', inject([], () => {
-    return builder.createAsync(HeaderComponentTestController)
+    return builder.createAsync(CheckItemComponentTestController)
       .then((fixture: ComponentFixture<any>) => {
-        let query = fixture.debugElement.query(By.directive(HeaderComponent));
+        let query = fixture.debugElement.query(By.directive(CheckItemComponent));
         expect(query).toBeTruthy();
         expect(query.componentInstance).toBeTruthy();
       });
@@ -37,10 +37,10 @@ describe('Component: Header', () => {
 @Component({
   selector: 'test',
   template: `
-    <header></header>
+    <check-item></check-item>
   `,
-  directives: [HeaderComponent]
+  directives: [CheckItemComponent]
 })
-class HeaderComponentTestController {
+class CheckItemComponentTestController {
 }
 
