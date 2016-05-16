@@ -105,7 +105,7 @@ export class ChecklistService {
                 ]
             },            
             {
-                title: 'code versioning',
+                title: 'Code versioning',
                 infos: [
                     'always use a version control system like git to get code history, tagging and be able to work with multiple developers at one code base'
                 ]
