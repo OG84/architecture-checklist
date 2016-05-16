@@ -8,6 +8,8 @@ This list has been created for educational purposes.
 - ng serve
 - open http://localhost:4200
 
+![screenshot](https://raw.githubusercontent.com/og84/architecture-checklist/master/screenshot.png)
+
 ## 1 Dependecy Management
 - do not rely on libraries or tools that are (or not) part of the execution environment
 - better pull all deps at build time
