@@ -36,13 +36,5 @@ ul > li > i{
 }
 
 ul > li.info > i{
-    color: lightgray;
-}
-
-ul > li.pro > i{
-    color: lightgreen;
-}
-
-ul > li.con > i{
-    color: lightcoral;
+    color: lightseagreen;
 }
