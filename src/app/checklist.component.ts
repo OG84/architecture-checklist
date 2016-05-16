@@ -6,11 +6,11 @@ import { CheckItemComponent, CheckItem } from './check-item';
 @Component({
   moduleId: module.id,
   selector: 'checklist',
-  templateUrl: 'architecture-checklist.component.html',
-  styleUrls: ['architecture-checklist.component.css'],
+  templateUrl: 'checklist.component.html',
+  styleUrls: ['checklist.component.css'],
   directives: [HeaderComponent, FooterComponent, CheckItemComponent]
 })
-export class ArchitectureChecklistAppComponent implements OnInit {
+export class ChecklistAppComponent implements OnInit {
 
   currentItem: CheckItem;
   private checkItems = new Array<CheckItem>();
