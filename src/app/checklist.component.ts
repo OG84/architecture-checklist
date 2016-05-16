@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CheckItemComponent, CheckItem } from './check-item';
-import { ChecklistService } from './';
+import { ChecklistService } from './checklist.service';
 
 @Component({
   moduleId: module.id,
   selector: 'checklist',
   templateUrl: 'checklist.component.html',
   styleUrls: ['checklist.component.css'],
+  providers: [ChecklistService],
   directives: [HeaderComponent, FooterComponent, CheckItemComponent]
 })
 export class ChecklistAppComponent implements OnInit {
