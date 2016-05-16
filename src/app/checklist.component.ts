@@ -19,33 +19,13 @@ export class ChecklistAppComponent implements OnInit {
   constructor() {
     this.checkItems = [
       {
-        title: 'Availability',
-        infos: ['in case of server crash, local network problems or environmental desasters'],
-        pros: [
-          'decreases the chance of data loss',
-          'increases availability in case of local network problems or environmental desasters'
-        ],
-        cons: ['increased system complexity and cost'],
-        value: 0
-      },
-      {
-        title: 'Access time',
-        infos: ['not all tasks require a fast access time. E.g. asynchronous background tasks.'],
-        pros: [
-          'depending on the ux requirements, fast access times can be essential in the customers acceptance of the software'
-        ],
-        cons: ['increased system cost'],
-        value: 0
-      },
-      {
-        title: 'Test',
-        infos: ['not all tasks require a fast access time. E.g. asynchronous background tasks.'],
-        pros: [
-          'depending on the ux requirements, fast access times can be essential in the customers acceptance of the software'
-        ],
-        cons: ['increased system cost'],
-        value: 0
-      },
+        title: 'Dependecy Management',
+        infos: [
+          'do not rely on libraries or tools that are (or not) part of the execution environment',
+          'better pull all deps at build time',
+          'use a dependency management framework'
+        ]
+      }
     ];
   }
 

@@ -1,25 +1,7 @@
-<span class="title">{{item.title}}</span>
+<span class="title">{{index+1}} {{item.title}}</span>
 <ul class="infos">
   <li class="info" *ngFor="let info of item.infos">
     <i class="material-icons small">info</i>
     <span>{{info}}</span>
   </li>
-
-  <li class="pro" *ngFor="let pro of item.pros">
-    <i class="material-icons small">add_circle</i>
-    <span>{{pro}}</span>
-  </li>
-
-  <li class="con" *ngFor="let con of item.cons">
-    <i class="material-icons small">remove_circle</i>
-    <span>{{con}}</span>
-  </li>
 </ul>
-<div class="range-field">
-  <input type="range" id="test5" min="0" max="10" [(ngModel)]="item.value"/>
-</div>
-<div class="scale">
-  <span>does not matter at all</span>
-  <span>would be nice</span>
-  <span>very important</span>
-</div>

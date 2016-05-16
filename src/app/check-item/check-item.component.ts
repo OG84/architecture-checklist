@@ -10,6 +10,7 @@ import { CheckItem } from './check-item.model';
 export class CheckItemComponent implements OnInit {
 
   @Input() item: CheckItem;
+  @Input() index: number;
   
   constructor() {}
 
