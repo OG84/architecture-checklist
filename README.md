@@ -2,6 +2,12 @@
 
 This list has been created for educational purposes. 
 
+## Installation
+- npm i -g angular-cli
+- npm i
+- ng serve
+- open localhost:4200
+
 ## 1 Dependecy Management
 - do not rely on libraries or tools that are (or not) part of the execution environment
 - better pull all deps at build time
