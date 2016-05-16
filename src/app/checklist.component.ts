@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CheckItemComponent, CheckItem } from './check-item';
+import { ChecklistService } from './';
 
 @Component({
   moduleId: module.id,
@@ -16,20 +17,12 @@ export class ChecklistAppComponent implements OnInit {
   private checkItems = new Array<CheckItem>();
   private currentItemIndex = 0;
 
-  constructor() {
-    this.checkItems = [
-      {
-        title: 'Dependecy Management',
-        infos: [
-          'do not rely on libraries or tools that are (or not) part of the execution environment',
-          'better pull all deps at build time',
-          'use a dependency management framework'
-        ]
-      }
-    ];
+  constructor(private checklistService: ChecklistService) {
+    
   }
 
   ngOnInit(): void {
+    this.checkItems = this.checklistService.getCheckItems();
     this.currentItem = this.checkItems[0];
   }
 
