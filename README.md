@@ -1,4 +1,4 @@
-# Principles and best practices of good software architecture
+# Basic principles and best practices of good software architecture
 
 This list has been created for educational purposes. 
 
@@ -6,7 +6,7 @@ This list has been created for educational purposes.
 - npm i -g angular-cli
 - npm i
 - ng serve
-- open localhost:4200
+- open http://localhost:4200
 
 ## 1 Dependecy Management
 - do not rely on libraries or tools that are (or not) part of the execution environment
