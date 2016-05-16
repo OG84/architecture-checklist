@@ -13,4 +13,6 @@
   
   .next-item, .prev-item{
     cursor: pointer;
+    color: teal;
+    opacity: 0.5;
   }
