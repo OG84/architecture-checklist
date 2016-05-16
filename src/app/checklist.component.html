@@ -1,7 +1,7 @@
 <header></header>
 <main>
-  <i class="prev-item material-icons large" (click)="previousItem()">chevron_left</i>
+  <i class="prev-item material-icons large" (click)="previousItem()" *ngIf="hasPrevious()">chevron_left</i>
   <check-item [item]="currentItem" [index]="currentItemIndex"></check-item>
-  <i class="next-item material-icons large" (click)="nextItem()">chevron_right</i>
+  <i class="next-item material-icons large" (click)="nextItem()" *ngIf="hasNext()">chevron_right</i>
 </main>
 <footer></footer>

@@ -41,11 +41,11 @@ export class ChecklistAppComponent implements OnInit {
     this.currentItem = this.checkItems[++this.currentItemIndex];
   }
 
-  private hasNext(): boolean {
+  hasNext(): boolean {
     return this.currentItemIndex < this.checkItems.length - 1;
   }
 
-  private hasPrevious(): boolean {
+  hasPrevious(): boolean {
     return this.currentItemIndex > 0;
   }
 }
